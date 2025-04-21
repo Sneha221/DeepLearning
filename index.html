@@ -35,36 +35,6 @@
             font-size: 2.5rem;
         }
 
-        /* Navigation Bar */
-        nav {
-            background-color: #1e1e1e;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        nav ul {
-            list-style: none;
-            display: inline-flex;
-            gap: 20px;
-        }
-
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
-            color: #90caf9;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #4caf50;
-        }
-
         /* Main Content Styling */
         main {
             padding: 20px;
@@ -87,17 +57,28 @@
             text-transform: uppercase;
         }
 
-        section h2 a {
-            text-decoration: none;
-            color: #4caf50;
-        }
-
-        section h2 a:hover {
+        section h3 {
+            font-size: 1.4rem;
+            margin-top: 15px;
             color: #90caf9;
         }
 
-        section p {
-            margin-top: 10px;
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 5px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        ul li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
         }
 
         /* Image Styling */
@@ -128,13 +109,30 @@
             box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
         }
 
-        footer a {
+        /* Links for Call-to-Actions */
+        a {
             color: #90caf9;
             text-decoration: none;
         }
 
-        footer a:hover {
+        a:hover {
             text-decoration: underline;
+        }
+
+        /* Animations */
+        section {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -142,28 +140,44 @@
     <header>
         <h1>Exploring Artificial Neural Networks</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ann.html">ANN</a></li>
-            <li><a href="cnn.html">CNN</a></li>
-            <li><a href="rnn.html">RNN</a></li>
-        </ul>
-    </nav>
     <main>
         <section>
-            <h2><a href="ann.html">Artificial Neural Network (ANN)</a></h2>
-            <p>An introduction to neural networks and their components.</p>
+            <h2>Artificial Neural Network (ANN)</h2>
+            <h3>Basics</h3>
+            <ul>
+                <li>Introduction to Deep Learning</li>
+                <li>Comparison: Deep Learning vs. Machine Learning</li>
+                <li>Why Deep Learning is Popular Today</li>
+                <li>Applications of Deep Learning</li>
+                <li>Types of Deep Learning Models</li>
+                <li>The History of Deep Learning</li>
+            </ul>
+            <h3>Perceptron</h3>
+            <ul>
+                <li>What is a Perceptron?</li>
+                <li>Perceptron vs. Biological Neuron</li>
+                <li>Making Predictions with a Perceptron</li>
+                <li>Training the Perceptron</li>
+                <li>Limitations of the Perceptron</li>
+            </ul>
         </section>
         <section>
-            <h2><a href="cnn.html">Convolutional Neural Networks (CNN)</a></h2>
+            <h2>Convolutional Neural Networks (CNN)</h2>
             <p>Learn about CNNs, which excel at analyzing visual data such as images and videos.</p>
         </section>
         <section>
-            <h2><a href="rnn.html">Recurrent Neural Networks (RNN)</a></h2>
+            <h2>Recurrent Neural Networks (RNN)</h2>
             <p>Explore RNNs, designed to process sequential data like time series or text.</p>
         </section>
-        <img src="images\1_DeepLearningSections.png" alt="Deep Learning Topics">
+        <section>
+            <h2>Autoencoders and GANs</h2>
+            <p>Discover how Autoencoders and Generative Adversarial Networks are used for generating and reconstructing data.</p>
+        </section>
+        <section>
+            <h2>Object Detection and Image Segmentation</h2>
+            <p>Dive into techniques for identifying objects in images and segmenting them for detailed analysis.</p>
+        </section>
+        <img src="https://via.placeholder.com/800x400" alt="Artificial Neural Networks">
     </main>
     <footer>
         <p>&copy; 2025 Neural Network Insights | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
