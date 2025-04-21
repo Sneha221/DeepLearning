@@ -24,11 +24,12 @@
             top: 0;
             left: 0;
             height: 100%;
+            overflow-y: auto;
         }
 
         aside h2 {
             color: #4caf50;
-            font-size: 1.5rem;
+            font-size: 1.8rem; /* Increased size for sidebar title */
             margin-bottom: 20px;
         }
 
@@ -38,13 +39,13 @@
         }
 
         aside ul li {
-            margin: 10px 0;
+            margin: 15px 0;
         }
 
         aside ul li a {
             color: #90caf9;
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 1.2rem; /* Larger font size for links */
             display: block;
             padding: 10px;
             border-radius: 5px;
@@ -58,9 +59,9 @@
 
         /* Main Content Styling */
         main {
-            margin-left: 270px;
+            margin-left: 270px; /* Adjusted to match sidebar width */
             padding: 20px;
-            width: calc(100% - 270px);
+            flex-grow: 1;
         }
 
         section {
@@ -73,9 +74,21 @@
 
         section h1 {
             color: #4caf50;
+            font-size: 2.8rem; /* Larger heading size */
         }
 
-        section p, section ul {
+        section p {
+            font-size: 1.4rem; /* Larger text for better readability */
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        section ul {
+            font-size: 1.3rem; /* Larger text for list items */
+            margin: 15px 0;
+        }
+
+        section ul li {
             margin: 10px 0;
         }
 
@@ -84,10 +97,6 @@
             height: auto;
             border-radius: 10px;
             margin: 20px 0;
-        }
-
-        ul li {
-            margin: 5px 0;
         }
     </style>
 </head>
@@ -109,20 +118,20 @@
                 Deep Learning is a subfield of Artificial Intelligence and Machine Learning inspired by the structure of the human brain. 
                 It involves creating algorithms called Neural Networks that mimic the way humans learn and process data.
             </p>
-            <img src="images\2_AIMLDL.png" alt="Deep Learning Concept" />
+            <img src="images/2_AIMLDL.png" alt="Deep Learning Concept" />
 
             <p>
                 These algorithms analyze data with a logical structure, enabling them to draw conclusions similar to those a human might. 
                 Neural Networks consist of layers of interconnected nodes that process data iteratively.
             </p>
-            <img src="images\2_DLvsHuman.png" alt="Neural Network Diagram" />
+            <img src="images/2_DLvsHuman.png" alt="Neural Network Diagram" />
 
             <p>
                 Like Machine Learning algorithms that find a hypothesis function using statistical techniques, Deep Learning achieves this 
                 through the use of Neural Networks. The layers in Neural Networks—Input Layer, Hidden Layers, and Output Layer—form the 
                 backbone of this learning process.
             </p>
-            <img src="images\2_DLvsML.png" alt="Deep Learning Layers" />
+            <img src="images/2_DLvsML.png" alt="Deep Learning Layers" />
         </section>
 
         <section>
@@ -148,7 +157,7 @@
             <p>
                 The combination of multiple perceptrons creates Hidden Layers, which are the key to discovering intricate patterns in data.
             </p>
-            <img src="images\2_hiddenlayer.png" alt="Deep Learning Structure Diagram" />
+            <img src="images/2_hiddenlayer.png" alt="Deep Learning Structure Diagram" />
         </section>
     </main>
 </body>
