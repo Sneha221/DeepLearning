@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basics of Neural Networks</title>
+    <title>Basics of Deep Learning</title>
     <style>
         body {
             font-family: "Roboto", sans-serif;
@@ -56,7 +56,7 @@
             color: #121212;
         }
 
-        /* Main Content */
+        /* Main Content Styling */
         main {
             margin-left: 270px;
             padding: 20px;
@@ -75,19 +75,19 @@
             color: #4caf50;
         }
 
-        section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        section ul li {
+        section p, section ul {
             margin: 10px 0;
         }
 
-        section ul li::before {
-            content: "▶";
-            color: #4caf50;
-            margin-right: 10px;
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        ul li {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -104,15 +104,51 @@
     </aside>
     <main>
         <section>
-            <h1>Basics of Neural Networks</h1>
+            <h1>What is Deep Learning?</h1>
+            <p>
+                Deep Learning is a subfield of Artificial Intelligence and Machine Learning inspired by the structure of the human brain. 
+                It involves creating algorithms called Neural Networks that mimic the way humans learn and process data.
+            </p>
+            <img src="images\2_AIMLDL.png" alt="Deep Learning Concept" />
+
+            <p>
+                These algorithms analyze data with a logical structure, enabling them to draw conclusions similar to those a human might. 
+                Neural Networks consist of layers of interconnected nodes that process data iteratively.
+            </p>
+            <img src="images\2_DLvsHuman.png" alt="Neural Network Diagram" />
+
+            <p>
+                Like Machine Learning algorithms that find a hypothesis function using statistical techniques, Deep Learning achieves this 
+                through the use of Neural Networks. The layers in Neural Networks—Input Layer, Hidden Layers, and Output Layer—form the 
+                backbone of this learning process.
+            </p>
+            <img src="images\2_DLvsML.png" alt="Deep Learning Layers" />
+        </section>
+
+        <section>
+            <h1>Deep Learning Structure</h1>
+            <p>
+                Neural Networks are composed of three main components:
+            </p>
             <ul>
-                <li>What is Deep Learning?</li>
-                <li>Deep Learning vs Machine Learning</li>
-                <li>Why Deep Learning is Popular Today</li>
-                <li>Applications of Deep Learning</li>
-                <li>Types of Deep Learning Models</li>
-                <li>The History of Deep Learning</li>
+                <li><b>Input Layer:</b> Accepts raw data as input.</li>
+                <li><b>Hidden Layers:</b> Perform the bulk of computation using weights and activation functions. 
+                    Each layer refines the data further.
+                </li>
+                <li><b>Output Layer:</b> Produces the final predictions or classifications.</li>
             </ul>
+            <p>
+                The <b>Perceptron</b>, a fundamental unit of a Neural Network, consists of:
+            </p>
+            <ul>
+                <li><b>Weights:</b> Determine the importance of input features.</li>
+                <li><b>Activation Function:</b> Decides whether a neuron should be activated based on input signals.</li>
+                <li><b>Bias:</b> Provides additional flexibility to shift activation functions.</li>
+            </ul>
+            <p>
+                The combination of multiple perceptrons creates Hidden Layers, which are the key to discovering intricate patterns in data.
+            </p>
+            <img src="images\2_hiddenlayer.png" alt="Deep Learning Structure Diagram" />
         </section>
     </main>
 </body>
